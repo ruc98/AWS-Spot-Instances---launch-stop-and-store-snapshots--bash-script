@@ -57,6 +57,6 @@ For the AMI coded in the script "ami-f88f1780" all the required packages for dee
 To save your work, terminate instance and cancel spot request run this bash script
 `$ bash spot_stop.sh`
 (Note: Enter location of the specification.json file in the last line of the bash code)
+
 This will automatically save your work in a snapshot of the volume in use and delete the volume itself. It will replace the "SnapshotId" in the specification.json file.
------------------------------------------------------------------------------------------------------------------------------------------- 
 
