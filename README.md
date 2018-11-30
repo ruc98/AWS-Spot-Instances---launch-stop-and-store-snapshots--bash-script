@@ -2,6 +2,7 @@ AWS Spot Instances - launch, stop and store snapshots -bash script
 
 The scripts in this repo can be used for one step launch and one step terminate and save the spot instances.
 Description of scripts is given in respective folders.
+
 `$ git clone https://github.com/ruc98/AWS-Spot-Instances---launch-stop-and-store-snapshots--bash-script.git`
 
 The Amazon Machine Image given below is available in the US-West-2c(oregon) region and is one of the best dockers available as community AMI. 
