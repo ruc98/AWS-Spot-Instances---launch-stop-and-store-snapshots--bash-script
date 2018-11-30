@@ -1,0 +1,17 @@
+{
+  "ImageId": "ami-f88f1780",
+  "KeyName": "--YOUR_KEY_NAME--",
+  "SecurityGroupIds": [ "sg-0XXXXXXXXXXXXXXXX" ],
+  "InstanceType": "p2.xlarge",
+  "BlockDeviceMappings": [
+    {
+      "DeviceName": "/dev/sdb",
+      "Ebs": {
+        "DeleteOnTermination": false,
+        "SnapshotId": "snap-0XXXXXXXXXXXXXXXX",
+        "VolumeSize": 16,
+        "VolumeType": "gp2"
+     }
+    }
+  ]
+}
