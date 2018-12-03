@@ -54,15 +54,19 @@ Open the `specification.json` file and fill the "KeyName", "SecurityGroupIds" an
 (Note: For the first time create a snapshot manually from the console and enter its SnapshotId)
 
 Run the bash script below to launch a spot instance and ssh to the remote system.
+
 `$ bash spot_launch.sh`
+
 (Note: Enter location of the specification.json file in the first line of the bash code)
 
-For the AMI coded in the script "ami-f88f1780" all the required packages for deep learning are stored in a virtual environment called dl4cv. To enter
+For the AMI coded in the script "ami-f88f1780" all the required packages for deep learning are stored in a virtual environment called dl4cv. To enter virtual environment.
+
 `$ workon dl4cv`
 
 To save your work, terminate instance and cancel spot request run this bash script
+
 `$ bash spot_stop.sh`
+
 (Note: Enter location of the specification.json file in the last line of the bash code)
 
 This will automatically save your work in a snapshot of the volume in use and delete the volume itself. It will replace the "SnapshotId" in the specification.json file.
-
